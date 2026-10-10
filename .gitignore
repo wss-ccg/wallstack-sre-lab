@@ -1,0 +1,238 @@
+# ═══════════════════════════════════════════════════════════════════════════
+# WallStack SRE Lab · .gitignore
+# ───────────────────────────────────────────────────────────────────────────
+# Игнорируемые файлы и папки. НЕ коммитятся в git.
+# Создано: 2026-10-10
+# ═══════════════════════════════════════════════════════════════════════════
+
+# ─── Python ───
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Виртуальные окружения
+.venv/
+venv/
+ENV/
+env/
+.env/
+.python-version
+
+# Инструменты тестирования
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+.nox/
+.hypothesis/
+*.cover
+.cache
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+
+# ─── Node.js (для будущего фронтенда) ───
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+lerna-debug.log*
+dist/
+dist-ssr/
+*.local
+.next/
+out/
+.nuxt/
+.cache/
+.parcel-cache/
+
+# ─── Переменные окружения (СЕКРЕТЫ) ───
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+.env.*.local
+*.env
+!.env.example
+
+# ─── IDE и редакторы ───
+.vscode/
+!.vscode/extensions.json
+!.vscode/settings.json.example
+.idea/
+*.swp
+*.swo
+*~
+*.sublime-project
+*.sublime-workspace
+.project
+.classpath
+.settings/
+
+# ─── OS ───
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# ─── Логи ───
+*.log
+logs/
+*.log.*
+npm-debug.log*
+yarn-debug.log*
+
+# ─── Временные файлы ───
+*.tmp
+*.temp
+*.bak
+*.backup
+*.swp
+*~
+.cache/
+tmp/
+temp/
+
+# ─── Docker ───
+docker-compose.override.yml
+.docker/
+*.pid
+
+# ─── Terraform ───
+*.tfstate
+*.tfstate.*
+*.tfstate.backup
+.terraform/
+.terraform.lock.hcl
+*.tfvars
+*.tfvars.json
+!example.tfvars
+crash.log
+crash.*.log
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+.terraformrc
+terraform.rc
+
+# ─── Kubernetes ───
+kubeconfig
+*.kubeconfig
+.kube/
+helm-charts/*/charts/
+helm-charts/*/Chart.lock
+
+# ─── Ansible ───
+*.retry
+.ansible/
+ansible.log
+
+# ─── Секреты и ключи ───
+*.pem
+*.key
+*.crt
+*.p12
+*.pfx
+!*.crt.example
+!*.key.example
+secrets/
+credentials/
+*.secret
+
+# ─── Базы данных ───
+*.sqlite
+*.sqlite3
+*.db
+*.sql.gz
+*.dump
+backups/
+dumps/
+
+# ─── Кеши ───
+.cache/
+.mypy_cache/
+.ruff_cache/
+.pytest_cache/
+.pytype/
+
+# ─── Покрытие кода ───
+.coverage
+coverage.xml
+*.lcov
+coverage/
+
+# ─── Vim ───
+[._]*.s[a-v][a-z]
+!*.svg
+[._]*.sw[a-p]
+[._]s[a-rt-v][a-z]
+[._]ss[a-gi-z]
+[._]sw[a-p]
+Session.vim
+.netrwhist
+*~
+
+# ─── Emacs ───
+*~
+\#*\#
+/.emacs.desktop
+/.emacs.desktop.lock
+*.elc
+auto-save-list
+tramp
+.\#*
+
+# ─── macOS специфика ───
+.AppleDouble
+.LSOverride
+Icon
+._*
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
+# ─── Специфика проекта ───
+# Файлы, которые НЕ должны попасть в публичный репозиторий
+# (но могут быть нужны локально)
+.local/
+*.local
+scratch/
+playground/
+
+# ─── End of .gitignore ───
